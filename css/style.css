@@ -23,11 +23,21 @@ body {
   font-family: "FigtreeVar", sans-serif;
   line-height: 1.5;
   letter-spacing: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-weight: 800;
   font-size: 1.25rem;
+}
+
+h1:hover {
+  color: var(--clr-yellow);
+  cursor: pointer;
 }
 
 p {
@@ -40,14 +50,12 @@ p {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
+  margin: 2rem;
   gap: 1.5rem;
-  max-width: 327px;
+  max-width: 20rem;
   background-color: var(--clr-white);
   border-radius: 1.25rem;
-}
-
-.card:hover h1{
-    color: var(--clr-yellow);
+  box-shadow: 0.625rem 0.625rem 0px #000000; /* X, Y, blur, color*/
 }
 
 .card img {
@@ -67,6 +75,7 @@ p {
   font-size: 0.75rem;
   border-radius: 4px;
   padding: 4px 0.75rem;
+  width: fit-content;
 }
 
 .content .date {
@@ -87,4 +96,10 @@ p {
 .author span {
   font-weight: 800;
   font-size: 0.875rem;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 24rem;
+  }
 }
