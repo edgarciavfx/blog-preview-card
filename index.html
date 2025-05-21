@@ -25,8 +25,9 @@
     </style>
   </head>
   <body>
-    <div class="card">
+    <div class="card hidden" id="card">
       <img
+        id="img"
         src="./assets/images/illustration-article.svg"
         alt="article illustration"
       />
@@ -40,7 +41,7 @@
         </p>
       </div>
       <div class="author" id="author">
-        <img src="./assets/images/image-avatar.webp" alt="profile picture" />
+        <img id="profile-pic" src="./assets/images/image-avatar.webp" alt="profile picture" />
         <span>Greg Hooper</span>
       </div>
     </div>
@@ -53,5 +54,5 @@
       <a href="https://github.com/edgarciavfx" target="_blank">edgarciavfx</a>.
     </div>
   </body>
-  <script src="./js/script.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </html>

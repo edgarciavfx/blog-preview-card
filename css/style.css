@@ -58,10 +58,45 @@ p {
   box-shadow: 0.625rem 0.625rem 0px #000000; /* X, Y, blur, color*/
 }
 
-.card img {
+/* powered by ai */
+#loading {
+  animation: shadow-rotate 2.4s linear infinite;
+}
+
+@keyframes shadow-rotate {
+  0%, 100% {
+    box-shadow: 0.75rem 0 0 #000000;
+  }
+  12.5% {
+    box-shadow: 0.53rem 0.53rem 0 #000000;
+  }
+  25% {
+    box-shadow: 0 0.75rem 0 #000000;
+  }
+  37.5% {
+    box-shadow: -0.53rem 0.53rem 0 #000000;
+  }
+  50% {
+    box-shadow: -0.75rem 0 0 #000000;
+  }
+  62.5% {
+    box-shadow: -0.53rem -0.53rem 0 #000000;
+  }
+  75% {
+    box-shadow: 0 -0.75rem 0 #000000;
+  }
+  87.5% {
+    box-shadow: 0.53rem -0.53rem 0 #000000;
+  }
+}
+
+.card #img {
   border-radius: 0.625rem;
 }
 
+.card #profile-pic {
+  border-radius: 50%;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -96,6 +131,10 @@ p {
 .author span {
   font-weight: 800;
   font-size: 0.875rem;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 1024px) {
